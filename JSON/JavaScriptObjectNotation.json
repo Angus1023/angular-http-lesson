@@ -1,0 +1,18 @@
+{
+    "superHero": {
+        "realName": "Steve Rogers",
+        "heroName": "Captain America",
+        "origin": "ScientificExperiment",
+        "age": 95
+    }
+}
+
+
+
+
+
+
+//Differences:
+//- Property names wrapped in quotes
+//- No complex types, only strings & number as values
+//- Colons always colons

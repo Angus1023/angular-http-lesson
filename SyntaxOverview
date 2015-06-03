@@ -1,0 +1,24 @@
+JSON
+{
+    "superHero": {
+        "realName": "Steve Rogers",
+        "heroName": "Captain America",
+        "origin": "ScientificExperiment",
+        "age": 95
+    }
+}
+
+
+REST
+GET, PUT, POST, DELETE
+"www.someurl.com/api"...
+
+ß
+Angular
+$http({
+		method: "GET",
+		url: 'https://AnyUrlCanGoHere.com/get/AnyDataRequest'
+	}).then(function(response){
+		var status = response.status;
+		var data = response.data;
+	})

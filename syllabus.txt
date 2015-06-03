@@ -1,0 +1,43 @@
+Angular III -($http - Chatroom)
+Student will have learned/applied:
+Basics of JSON/AJAX:
+What JSON is
+Why it is used
+What AJAX is
+Why it is used
+What is REST
+Why is it used
+Angular $http service
+Promises in Angular $q
+Student will have produced:
+Basic AJAX/$HTTP Angular application
+
+Learning Objectives (Students will...):
+be able to explain what JSON is
+be able to explain was REST is
+be able to explain what AJAX is
+make an ajax request with angular, call .then on the promise and add that data to the $scope
+
+Hour 10:00 -10:15: JSON/AJAX Lecture
+Discuss The power of data and interactivity/accessibility (data-driven applications, mashups).
+Discuss how do clients/servers communicate with one another? What is an API? Brief history of AJAX. What formats are commonly used for client/server communication? 
+Walk through http://tylermcginnis.com/itunes/ and show the network in devtools and see which requests are getting made and the JSON Data we’re getting back.
+Basic REST principles. How to communicate in a standard way across websites. We don’t want to reinvent the wheel with every new API. What does a GET or POST request look like? Briefly discuss headers, request bodies, basic structure of requests. Demo using Postman extension.
+
+Hour 10:15-11:30: Angular’s $http → ajax in Angular
+Angular provides us a convenient service with which to make ajax requests in $http
+Show how the $http service works (method, url, etc)
+Discuss the problem with async JS requests
+Callbacks and how they are used to control flow with different requests in JS, but now this new cool kid on the block promises just moved in and he’s revolutionizing (and cleaning up) how we interact with outside resources. 
+Discuss how $http returns a promise, what a promise is, what it’s purpose is, how it’s resolved, etc etc. For some reason promises are magically confusing to students when they initially see them so go slow during this section.
+
+11:30 - 12:30 - Mini Project
+
+12:30  - 1:30 - Lunch
+1:30 - 5:00: Chat Room
+https://github.com/DevMountain/chatroom
+Students will create a basic chat room using the parse API which they will all be chatting in together. 
+See README.md for more directions.
+
+
+

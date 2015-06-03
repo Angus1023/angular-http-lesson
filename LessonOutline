@@ -1,0 +1,85 @@
+Jeremy Robertson
+Jane.com
+Goal: You to learn this material
+Stronger - 1 mile flat, 1 mile obstacle course, easier or harder?
+Force you to think and to make connections
+Like a spiderweb, clear, but sticky and slow to travel, and fragile
+Tests - Have to answer
+If I ask a question and pause wait 15 seconds
+
+
+
+:: Test 1
+
+Part 1: What is an API
+
+How does it work
+Draw on Board
+Computer ->    Web   -> Server(Twitter)
+
+- Like an Envelope
+Envelope/Packet
+WEB REQUEST
+Who is receiving it: Port/Server Configuration
+Where does it go: Url
+What are we sending: Data in Body/Params
+How are we communicating: Language/Protocol
+When will I get my response: Async/Then
+
+
+:: Part 1b: Sample Facebook
+
+:: TWITTER API
+https://dev.twitter.com/overview/documentation
+https://dev.twitter.com/rest/reference/get/statuses/user_timeline
+
+http://tylermcginnis.com/itunes/ [[DevTools on Bottom]]
+POSTMAN: https://itunes.apple.com/search?callback=angular.callbacks._3&term=song
+
+:: Briefly discuss headers, request bodies, basic structure of requests. Demo using Postman extension.		
+
+:: Test 2
+
+
+:: Show XML & JSON
+
+:: Test 3
+
+REST stands for  :::  Representational State Transfer
+
+PROTOCOL - Think military, what's a military protocol?
+- Uses JSON to send and receive data
+- Structure
+- Accessible via web
+
+:: Part 2: REST & REST Samples
+
+:: Test 4
+
+:: $Http and Angular
+- Function as an object
+- Function as a parameter
+- Promise
+:: People Lesson with Server and async and promises
+
+:: Test 5
+
+- AND THEN : https://www.youtube.com/watch?v=yO_MYzey5uA
+- service steps
+	this.addAnyPeople = function (peopleObject){
+			$http.post('https://IKnowAllThePeoples.com/AnyPeople', peopleObject);
+			//peopleObject = {name:'Logan', age:'112', origin:'The great Canadia', skills:'claws, regen, adamantite skelleton'} 
+		},
+		this.changeAnyPeopleName = function (peopleNum, newName) {
+			$http.put('https://IKnowAllThePeoples.com/AnyPeople/' + peopleNum + '?name=' + newName);
+			//if peopleNum = 7 & newName = 'Director Fury'
+			//'https://IKnowAllThePeoples.com/changeAnyPeople/7?name=Directory%20Fury
+		},
+		this.deleteAnyPeople = function (peopleNum){
+			$http.delete('https://IKnowAllThePeoples.com/AnyPeople/' + peopleNum);
+		}
+
+:: Test 6
+
+- BONUS: implement controller
+- BONUS: Show server

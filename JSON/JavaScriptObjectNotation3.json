@@ -1,0 +1,28 @@
+{
+	"Avengers League" : {
+		"boss": "Fury Man",
+		"hq": "123 supers lane",
+		"superHeroes":[
+		    {
+		        "realName": "Steve Rogers",
+		        "heroName": "Captain America",
+		        "origin": "ScientificExperiment",
+		        "age": 95
+		    },
+			{
+		        "realName": "Barry Allen",
+		        "heroName": "The Flash",
+		        "origin": "Freak Particle Reactor Explosion",
+		        "age": 33
+		    },
+		    {
+		        "realName": "Hal Jordan",
+		        "heroName": "Green Lantern",
+		        "origin": "Cosmic Power Ring",
+		        "age": 44
+		    }
+	    ]
+	}
+}
+
+// Nest All the Things

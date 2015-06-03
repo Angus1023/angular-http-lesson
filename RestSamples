@@ -1,0 +1,12 @@
+::: FLESH THIS OUT
+
+"http://www.devmounta.in/"
+
+GET "http://www.devmounta.in/api/students"
+GET "http://www.devmounta.in/api/student/9999"
+
+PUT "http://www.devmounta.in/api/student?name='Natasha Widow'&origin='KGB'&skills='wearing leather and Kung Fu'
+
+POST "http://www.devmounta.in/api/Student" BODY: {object}
+
+DELETE "http://www.devmounta.in/student/9998"
