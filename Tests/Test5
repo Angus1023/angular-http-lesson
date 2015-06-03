@@ -1,4 +1,11 @@
 What is an asynchronous call?
 
-How does angular/javascript handle asynchronous calls?
 
+How does angular/javascript handle asynchronous calls?
+Promises AND .THEN
+
+A promise is:
+If I give you a callback
+You PROMISE to invoke it
+When you have my answer 
+[OPTIONAL]and pass my answer in as a parameter

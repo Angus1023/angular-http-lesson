@@ -1,4 +1,4 @@
-angular.service('peopleService', ['errorHandler', function(errorßHandler){
+angular.service('peopleService', ['errorHandler', function(errorHandler){
 	return {
 		this.getAnyPeople = function (peopleNum){
 			return $http.get('https://IKnowAllThePeoples.com/getAnyPeople/' + peopleNum)

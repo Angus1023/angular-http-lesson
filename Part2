@@ -1,8 +1,12 @@
 :: REST
+Uses JSON
+Is A Structure
+Usable via standard Web Requests
+
 
 Rest call types:
-  Get
-  Put
-  Post
-  Delete
+  Get - Get information
+  Put - Modifying - Send Updated Information VIA URL
+  Post - Adding - Send Information via BODY
+  Delete - Deleting
 

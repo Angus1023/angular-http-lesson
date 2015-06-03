@@ -1,5 +1,13 @@
 function loginWithFacebook(userName, password) {
 
+	var facebook;
+
+	var data = {
+		title: "DevMountain 4 life yo",
+		body: "Rocking like pros"
+	}
+
+	facebook.postToWall(data);
 
 }
 
