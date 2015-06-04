@@ -1,13 +1,8 @@
-
-
 "http://www.devmounta.in/"
 
 GET "http://www.devmounta.in/api/students"
 
-
-
 GET "http://www.devmounta.in/api/student/9999"
-
 
 PUT "http://www.devmounta.in/api/student/9979/?name='Natasha Widow'&origin='KGB'&skills='wearing leather and Kung Fu'
 

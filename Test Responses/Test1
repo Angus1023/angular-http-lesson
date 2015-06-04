@@ -1,0 +1,18 @@
+How do applications talk to eachother?
+
+Applications communicate through APIs.  Most modern web applications communicate via Web Requests.
+
+What is an API?
+
+API stands for Application Program Interface.  An API is how an application specifies the paths and protocols that other programs can invoke to interact with your application.
+
+What is REST?
+
+REST is the protocol used by web requests.  REST uses urls  GET, PUT, POST, and DELETE methods to query and manipulate data at the target url.
+
+What is a Synchronous function vs an Asyncronous Function?
+
+A synchronous function is a function that is executed in sequential order.
+
+An Asynchronous Function is a function that delays part of it's functionality to be executed separately from the rest of the logic in the function.
+Asynchronous functions uses callbacks to report their results back to invoker.

@@ -1,3 +1,5 @@
+//This is conceptual, not actual syntax!!!
+
 function loginWithFacebook(userName, password) {
 
 	var facebook;
@@ -10,16 +12,3 @@ function loginWithFacebook(userName, password) {
 	facebook.postToWall(data);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

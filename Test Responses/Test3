@@ -1,0 +1,10 @@
+What is JSON?
+
+JSON stands for JavaScript Object Notation.  It is an accepted data format standard that uses curly braces and strings as keys.
+It's similar to javascript objects.
+
+What are the key parts to JSON?
+
+Keys as strings
+Always colons never equals signs
+Simple data types

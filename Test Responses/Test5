@@ -1,0 +1,13 @@
+What is an asynchronous call?
+
+An Asynchronous Function is a function that delays part of it's functionality to be executed separately from the rest of the logic in the function.
+Asynchronous functions uses callbacks to report their results back to invoker.
+
+How does angular/javascript handle asynchronous calls?
+Promises AND .THEN
+
+A promise is:
+If I give you a callback
+You PROMISE to invoke it
+When you have my answer 
+[OPTIONAL]and pass my answer in as a parameter

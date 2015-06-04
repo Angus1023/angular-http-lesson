@@ -1,0 +1,17 @@
+What is REST
+
+REST is the protocol used by web requests.  REST uses urls  GET, PUT, POST, and DELETE methods to query and manipulate data at the target url.
+
+What are the 4 primary calls for REST and what do they do?
+GET - Get
+PUT - Modify
+POST - Add
+DELETE - Delete
+
+REST calls use which language?
+
+JSON
+
+How do you initiate a REST call in angular?
+
+$http
