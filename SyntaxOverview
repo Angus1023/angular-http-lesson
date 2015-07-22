@@ -13,7 +13,6 @@ REST
 GET, PUT, POST, DELETE
 "www.someurl.com/api"...
 
-ß
 Angular
 $http({
 		method: "GET",

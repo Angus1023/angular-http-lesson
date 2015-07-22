@@ -11,8 +11,7 @@
 
 
 
-
 //Differences:
 //- Property names wrapped in quotes
-//- No complex types, only strings & number as values
+//- No complex types, only strings & number as values,objects, and arrays
 //- Colons always colons
