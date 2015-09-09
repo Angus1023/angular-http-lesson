@@ -1,11 +1,12 @@
-
+REST
+is a protocol
 
 "http://www.devmounta.in/"
 
 GET "http://www.devmounta.in/api/students"
-GET "http://www.devmounta.in/api/student/9999"
+GET "http://www.devmounta.in/api/student/9998"
 
-PUT "http://www.devmounta.in/api/student?name='Natasha Widow'&origin='KGB'&skills='wearing leather and Kung Fu'
+PUT "http://www.devmounta.in/api/student/323/?name='Natasha Widow'&origin='KGB'&skills='wearing leather and Kung Fu'
 
 POST "http://www.devmounta.in/api/Student" BODY: {object}
 

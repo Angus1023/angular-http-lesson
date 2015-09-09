@@ -3,31 +3,46 @@ var handler = function(response){
 									status: 200
 						       		data: {
 										people:{
-											name: 'Awesome'
+											id: 333,
+											name: 'Awesome',
 											title: 'Mr'
 										}
 									}
 								}
 					*/
-						}}
-				return {person: response.data.people, status: 200};
+					
+						var people = response.data.people;
+						people.coolness = 9.5;
+				return people;
 			}
 
 angular.service('peopleService', ['errorHandler', function(errorHandler){
 	return {
 		this.getAnyPeople = function (peopleNum){
 			//peopleNum: 123
-			return $http.get('https://IKnowAllThePeoples.com/api/AnyPeople/'
-								 + peopleNum)
+		var url = 'https://IKnowAllThePeoples.com/api/AnyPeople/' + peopleNum;
+		//'https://IKnowAllThePeoples.com/api/AnyPeople/333'
+
+			return $http({
+					url: url,
+					method: 'GET'
+				})
 				.then(handler)
 		}
 	}
 }]);
 
-var ticket = peopleService.getAnyPeople(123)
-ticket.then(function(person){
-	person.person
-	person.status
+angular.controller('mycontroller', function($scope, peopleService){
+	peopleService.getAnyPeople(333).then(function(myPeople){
+		/*myPerson: {
+											id: 333,
+											name: 'Awesome',
+											title: 'Mr'
+										}*/
+
+		$scope.thePersonWeCareAbout = myPeople;
+
+	});
 })
 
 {
@@ -35,3 +50,10 @@ ticket.then(function(person){
 		"name": "Joe"
 	}
 }
+
+
+// var ticket = peopleService.getAnyPeople(123)
+// ticket.then(function(person){
+// 	person.person
+// 	person.status
+// })

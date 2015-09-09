@@ -1,4 +1,4 @@
-var superHero  = {
+var superHero = {
 	realName: "Steve Rogers",
 	heroName: "Captain America",
 	origin: "Scientific Experiment",
