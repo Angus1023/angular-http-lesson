@@ -16,7 +16,7 @@
 
 
 
-
+https://itunes.apple.com/search?callback=angular.callbacks._3&term=song
 
 
 
@@ -31,5 +31,5 @@
 
 //Differences:
 //- Property names wrapped in quotes
-//- No complex types, only strings & number as values
+//- No complex types, only strings & number, boolean, arrays, objects as values
 //- Colons always colons

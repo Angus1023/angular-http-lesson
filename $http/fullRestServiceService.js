@@ -3,6 +3,9 @@ angular.service('peopleService', ['errorHandler', function(errorHandler){
 	return {
 		this.getAnyPeople = function (peopleNum){
 			return $http.get(baseUrl + peopleNum).then(function(response){
+                if(response.status !== 200) {
+        
+                }
 				return response.data.people;
 			},function(data, status, headers, config){
 				errorHandler(data);
