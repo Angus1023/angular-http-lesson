@@ -1,21 +1,17 @@
-Jeremy Robertson
-Jane.com
-Goal: You to learn this material
-Stronger - 1 mile flat, 1 mile obstacle course, easier or harder?
-Force you to think and to make connections
-Like a spiderweb, clear, but sticky and slow to travel, and fragile
-Tests - Have to answer
-If I ask a question and pause wait 15 seconds
 
-
-
-:: Test 1
+:: Test 1 - See Test 1 file  
+- Opening with tests, when lessons are conceptual, sends a queue to the students on which information is important to watch for.
 
 Part 1: What is an API
+Application = Program
+So, Application Program Interface  = Program-Program Interface
+Ask What is an interface? (keyboard, monitor for computer - Door is interface to house.)
 
 How does it work
 Draw on Board
 Computer ->    Web   -> Server(Twitter)
+Requests are a series of hops (show traceroute)
+each of these is looking for an IP address, much like a physical address.
 
 - Like an Envelope
 Envelope/Packet
@@ -26,22 +22,20 @@ What are we sending: Data in Body/Params
 How are we communicating: Language/Protocol
 When will I get my response: Async/Then
 
-
-:: Part 1b: Sample Facebook
-
 :: TWITTER API
 https://dev.twitter.com/overview/documentation
 https://dev.twitter.com/rest/reference/get/statuses/user_timeline
-
-http://tylermcginnis.com/itunes/ [[DevTools on Bottom]]
-POSTMAN: https://itunes.apple.com/search?callback=angular.callbacks._3&term=song
 
 :: Briefly discuss headers, request bodies, basic structure of requests. Demo using Postman extension.		
 
 :: Test 2
 
+:: Show XML & JSON 
+- See the JSON examples folder
+- Walk through XML to JSON to JSON2 to JSON3
 
-:: Show XML & JSON
+Use POSTMAN to show: https://itunes.apple.com/search?callback=angular.callbacks._3&term=song
+Show the JSON as a result from the call
 
 :: Test 3
 
@@ -53,20 +47,52 @@ PROTOCOL - Think military, what's a military protocol?
 - Accessible via web
 
 :: Part 2: REST & REST Samples
+- See the RESTExamples file
+- Explain :
+	- Methods :GET (fetching data), PUT (Modifying data using URL), POST (Adding data via body), DELETE (deleting data via url)
+	- Proper url structure
+		- always include an '/api/' or something so that the urls are not the same ones potentially used by your website customers
+		- descriptive urls about the 'domain' or the parts your customer understands (no array, list, object, etc in url)
+		- same url when dealing with students, just change the method to change whether we're adding, deleting, etc
+	- Using the ? to send query parameters 
+	- Using an id in a url
+		The difference between id in url and ? and usecases
 
 :: Test 4
 
 :: $Http and Angular
-- Function as an object
-- Function as a parameter
-- Promise
-:: People Lesson with Server and async and promises
+Start from:
+- a function is just an object
+- Objects can be parameters Function as a parameter
+(Show this if they need to see the progression)
+- Promises!
+	- AND THEN : https://www.youtube.com/watch?v=yO_MYzey5uA
+	- Asynchronous calls
+		- Pick 3 students sitting next to eachother and order coffee from one
+			- He doesn't have it so he has to ask for it
+			- He asks for it then turns around and makes me a promise he'll give it to me
+		- Repeat this until the last guy
+			- He needs to leave to get the coffe so he makes a promise to the guy who asked him.
+		- When he brings the coffee back (pretend)
+			- He gives it to the guy that asked him.  He can change it if he wants (he adds cream)
+			- The next guy can also change it since he has it (he spits in it)
+		- The last guy then gives it to me as promised.
+	
+	- If students are still stuck take the services project from yesterday and throw in a quick $http call to swapi.co or pokeapi.com
+		- Place breakpoints everywhere and walk through the flow.
+			
+
 
 :: Test 5
 
-- AND THEN : https://www.youtube.com/watch?v=yO_MYzey5uA
+Walk through the $http folder starting with the most basic file first.
+Show a basic $http call.
+Connect each part back to the JSON the REST the URLs, bodies and everything else we've talked about in this lesson.
+Then proceed to showing a $http call in a service.
+Then make a full crud service as a class that doesall parts.
+
 - service steps
-	this.addAnyPeople = function (peopleObject){
+		this.addAnyPeople = function (peopleObject){
 			$http.post('https://IKnowAllThePeoples.com/AnyPeople', peopleObject);
 			//peopleObject = {name:'Logan', age:'112', origin:'The great Canadia', skills:'claws, regen, adamantite skelleton'} 
 		},
