@@ -1,10 +1,13 @@
-angular.service('peopleService', function(errorHandler, $http){
+app.service('peopleService', function(errorHandler, $http){
 
 		this.getAnyPeople = function (){
-			return $http.get('https://IKnowAllThePeoples.com/getAnyPeople/' peopleNum)
-				.then(function(response){
-				    return response.data.people;
-			     })
+			var promise = $http.get('https://IKnowAllThePeoples.com/getAnyPeople/');
+            
+            promise.then(function(response){
+                return response.data.people;
+            });
+                
+            return promise;
 		}
 	
 });

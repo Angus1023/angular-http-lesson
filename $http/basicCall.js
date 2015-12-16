@@ -1,16 +1,19 @@
 
 
-$http.post('https://AnyUrlCanGoHere.com/get/Dogs')
-.then(function(dogs){
-	var status = dogs.status;
-	var data = dogs.data;
+var promise = $http.get('https://AnyUrlCanGoHere.com/api/dogs');
+
+promise.then(function(results){
+	var status = results.status;
+	var dogs = results.data;
 })
 
 
-$http({
+var promise = $http({
+	url: 'https://AnyUrlCanGoHere.com/api/Dogs',
 	method: "GET",
-	url: 'https://AnyUrlCanGoHere.com/get/Dogs',
-}).then(function(response){
+    data: {name: 'Mee sir'}
+});
+promise.then(function(response){
 	var status = response.status;
 	var data = response.data;
 })
