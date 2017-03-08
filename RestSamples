@@ -1,11 +1,24 @@
-"http://www.devmounta.in/"
+"http://www.devmounta.in/api/students"
+"http://www.devmounta.in/students"
 
-GET "http://www.devmounta.in/api/students"
-GET "http://www.devmounta.in/api/student/9999"
+GET "http://www.devmounta.in/api/students/"
 
-PUT "http://www.devmounta.in/api/student/123/?name='Natasha Widow'&origin='KGB'&skills='wearing leather and Kung Fu'"
+GET "http://www.devmounta.in/api/students/9999"
+GET "http://www.devmounta.in/api/students/1234"
+GET "http://www.devmounta.in/api/students/5432"
+GET "http://www.devmounta.in/api/students/5432/friends/7"
 
-POST "http://www.devmounta.in/api/student" 
-        BODY: {object}
+"http://www.devmounta.in/api/students/" + currentUser.id
 
-DELETE "http://www.devmounta.in/api/student/9999"
+GET "http://www.devmounta.in/api/students/982/projects/21"
+
+GET "http://www.devmounta.in/api/students?cohortId=79&state=UT"
+
+GET "http://www.devmounta.in/api/students?cohortId=81&age=awesome"
+
+PUT "http://www.devmounta.in/api/students/123/?name=Natasha%20Widow&origin=KGB&skills=wearing%20leather%20and%20Kung%20Fu"
+
+POST "http://www.devmounta.in/api/students" 
+        BODY: "{"name": "Joe"}"
+
+DELETE "http://www.devmounta.in/api/students/9999"
